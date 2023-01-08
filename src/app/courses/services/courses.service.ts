@@ -47,4 +47,9 @@ export class CoursesService {
         );
     }
 
+
+    getHome$():Observable<any> {
+      return this.http.get<any>('assets/home.json');
+    }
+
 }
